@@ -1,0 +1,1 @@
+web:guicorn -w myapp:app
