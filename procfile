@@ -1,1 +1,1 @@
-web:guicorn -w myapp:app
+web:guicorn -w 4 myapp:app
