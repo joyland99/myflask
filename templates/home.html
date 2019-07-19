@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<header>
+		<div class="row">
+				<div class="logo">
+					<img src="../static/LOG1.jpg">
+				<ul class="main-nav">
+					<li class="active"><a href="main.html"> HOME </a></li>
+					<li><a href="home.html"> MAIN </a></li>
+					<li><a href="about.html"> ABOUT </a></li>
+				</ul>
+			
+			</div>
+
+				<table>
+					<th>
+						<h2 color:white;>Hardware</h2>
+						<th><img src="../static/3.jpg" width=100px; height=100px; alt="Headphones"></th> 
+					</th>
+				
+				</table>
+
+				<script>
+					import geopy.geocoders 
+					import Nominatim
+					var x = document.getElementById("demo");
+					function getLocation() {
+					  if (navigator.geolocation) {
+					    navigator.geolocation.getCurrentPosition(showPosition);
+					  } else {
+					    x.innerHTML = "Geolocation is not supported by this browser.";
+					  }
+					}
+
+					function showPosition(position) {
+					  x.innerHTML = "Latitude: " + position.coords.latitude + 
+					  "<br>Longitude: " + position.coords.longitude; 
+					}
+				</script>
+
+
+			
+	</header>
+<footer>
+	<div id="footer">
+			<a class="osh-icon -footer-facebook" title="Facebook" target="_blank" href="https://www.facebook.com"></a><img src="../static/fb.jpg">
+			<a class="osh-icon -footer-twitter" title="Twitter" target="_blank" href="https://twitter.com"></a><img src="../static/twitter.jpg">
+			</a>
+			<a class="osh-icon -footer-youtube" title=" Youtube" target="_blank" href="https://www.youtube.com"></a><img src="../static/youtube.jpg">
+			</a>
+			<a class="osh-icon -footer-instagram" title="Instagram" target="_blank" href="https://www.instagram.com"></a><img src="../static/instagram.jpg">
+			</a>
+			</div></footer>
+</body>
+</html>

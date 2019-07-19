@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body class="body">
+	<img src="../static/pic/pic.jpg" background-position="center">
+	
+		
+<form action="main.html" method="POST">
+	<dev class="loginbox">
+	<img src="../static/pic/Capture.PNG" class="capture"/><br>
+			<h1>Login Here</h1>
+<p>Username</p>
+<input type="text" name="username" placeholder="Enter Username" value="admin">
+<p>Password</p>
+<input type="password" name="password" placeholder="Enter password" value="admin" >
+<input type="submit" name="submit" value="Login">
+<a href="#" name="lost">Lost your password?</a><br>
+
+
+</form>
+
+	{% if error %}
+		<p class="error">Error:{{error}}</p>
+	{% endif %}
+	</dev>
+
+</body>
+
+
+</html>
